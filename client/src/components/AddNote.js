@@ -29,7 +29,7 @@ export default function AddNote(props) {
           </div>
           <div className="mb-3">
             <label htmlFor="tag" className='mb-1 fs-5'>Tags</label>
-            <p style={{fontSize:"16px",opacity:0.5}} className='mb-3'>(Separate tags using space)</p>
+            <p style={{fontSize:"16px",opacity:0.5}} className='mb-3'>(Separate tags using commas)</p>
             <input type="text" className="form-control" id="tag" name='tag' placeholder="#..." onChange={onChange} minLength={5} required value={note.tag}/>
           </div>
           <button disabled={note.title.length<5|| note.description.length<5} type="submit" className="btn btn-primary" onClick={handleClick}>Add Note</button>

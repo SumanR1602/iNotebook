@@ -7,6 +7,8 @@ const port = 5000
 
 app.use(cors({
   origin: "https://i-notebook-frontend-jade.vercel.app",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
   optionsSuccessStatus: 200
 }));
 

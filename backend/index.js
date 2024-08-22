@@ -5,7 +5,12 @@ connectToMongo();
 const app = express()
 const port = 5000
 
-app.use(cors())
+app.use(cors(
+  {
+    origin:https:["https://i-notebook-frontend-jade.vercel.app/"],
+    optionsSuccessStatus: 200
+  }
+))
 app.use(express.json());
 
 app.get("/",(req,res)=>{

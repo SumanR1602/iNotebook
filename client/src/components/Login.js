@@ -34,7 +34,7 @@ export default function Login(props) {
   }
   return (
     <div className='container mt-3'>
-      <h3>Log in to continue iNotebook</h3>
+      <h3 className='text-center mb-2'>Log in to continue iNotebook</h3>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="email" className="form-label">Email</label>
@@ -46,7 +46,7 @@ export default function Login(props) {
           <input type="password" className="form-control" id="password" name='password' value={credentials.password} onChange={onChange} />
         </div>
 
-        <button type="submit" className="btn btn-primary" >Submit</button>
+        <button type="submit" className="btn btn-primary mb-4" >Submit</button>
       </form>
     </div>
   )

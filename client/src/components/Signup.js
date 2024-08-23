@@ -44,18 +44,18 @@ export default function Signup(props) {
           <label htmlFor="email" className="form-label">Email</label>
           <input type="email" className="form-control" id="email" name="email" aria-describedby="emailHelp" onChange={onChange} style={{ backgroundColor: "#F9F6F2" }} />
         </div>
-        <div className="d-flex justify-content-between">
-          <div className="mb-3">
+        <div className="row">
+          <div className="col-md-6 mb-3">
             <label htmlFor="password" className="form-label">Password</label>
-            <input type="password" className="form-control" id="password" name="password" onChange={onChange} minLength={5} required style={{ backgroundColor: "#F9F6F2", width: "38rem" }} />
+            <input type="password" className="form-control" id="password" name="password" onChange={onChange} minLength={5} required style={{ backgroundColor: "#F9F6F2" }} />
           </div>
-          <div className="mb-3">
+          <div className="col-md-6 mb-3">
             <label htmlFor="cpassword" className="form-label">Confirm Password</label>
-            <input type="password" className="form-control" id="cpassword" name='cpassword' onChange={onChange} minLength={5} required style={{ backgroundColor: "#F9F6F2", width: "38rem" }} />
+            <input type="password" className="form-control" id="cpassword" name='cpassword' onChange={onChange} minLength={5} required style={{ backgroundColor: "#F9F6F2" }} />
           </div>
         </div>
-        <div className="container text-center">
-          <button type="submit" className="btn btn-primary mb-4 btn-gradient text-center ">Submit</button>
+        <div className="text-center">
+          <button type="submit" className="btn btn-primary mb-4 btn-gradient text-center">Submit</button>
         </div>
       </form>
     </div>

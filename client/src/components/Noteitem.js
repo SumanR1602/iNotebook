@@ -49,14 +49,14 @@ export default function Noteitem(props) {
                         )}
                     </p>
                     <p className="card-text d-flex flex-wrap">
-                        {tagsToShow.map(tag => (
-                            <button key={tag} className='btn-tag-custom'>{tag}</button>
+                        {tagsToShow.map((tag, index) => (
+                            <button key={`${note._id}-${index}`} className='btn-tag-custom'>{tag}</button>
                         ))}
                         {!isTagsExpanded && remainingTagsCount > 0 && (
-                            <span style={{color:"lightseagreen",margin:"auto 0.5rem",fontSize:"1rem",textDecoration:"underline",cursor:'pointer',textUnderlineOffset:"4px"}} onClick={() => setIsTagsExpanded(true)}>+ {remainingTagsCount} more</span>
+                            <span style={{ color: "lightseagreen", margin: "auto 0.5rem", fontSize: "1rem", textDecoration: "underline", cursor: 'pointer', textUnderlineOffset: "4px" }} onClick={() => setIsTagsExpanded(true)}>+ {remainingTagsCount} more</span>
                         )}
                         {isTagsExpanded && (
-                            <span style={{color:"lightseagreen",margin:"auto 0.5rem",fontSize:"1rem",textDecoration:"underline",cursor:'pointer',textUnderlineOffset:"4px"}} onClick={() => setIsTagsExpanded(false)}>Show Less</span>
+                            <span style={{ color: "lightseagreen", margin: "auto 0.5rem", fontSize: "1rem", textDecoration: "underline", cursor: 'pointer', textUnderlineOffset: "4px" }} onClick={() => setIsTagsExpanded(false)}>Show Less</span>
                         )}
                     </p>
                     <div className="d-flex justify-content-between">

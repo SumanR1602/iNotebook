@@ -6,7 +6,7 @@ const app = express()
 const port = 5000
 
 app.use(cors({
-  origin: "https://inotebook-site.vercel.app",
+  origin: "*",
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization","auth-token"],
   optionsSuccessStatus: 200

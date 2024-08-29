@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 export default function Login(props) {
   const [credentials, setCredentials] = useState({ email: "", password: "" });
   let navigate = useNavigate();
-  const host = "https://i-notebook-plum.vercel.app"
+  const host = "https://i-notebook-sigma-eosin.vercel.app"
 
   const handleSubmit = async (e) => {
     e.preventDefault();
